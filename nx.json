@@ -29,6 +29,9 @@
     "first-project-e2e": {
       "tags": [],
       "implicitDependencies": ["first-project"]
+    },
+    "ui-header": {
+      "tags": []
     }
   }
 }
