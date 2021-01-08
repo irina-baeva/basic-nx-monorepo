@@ -7,14 +7,14 @@ import star from './star.svg';
 
 import { Route, Link } from 'react-router-dom';
 import { PageTitle } from '@basic-workspace/ui-header';
-
+import { apiResponse, API_URL } from '@basic-workspace/api-interface';
 export function App() {
-  const [apiResponse, setApiResponse] = useState({message: 'Loading....'})
+  const [apiResponse, setApiResponse] = useState<apiResponse>({message: 'Loading....'})
 
   useEffect(()=>{
-    fetch('/api').then(response => response.json()).then(setApiResponse)
+    fetch(API_URL).then(response => response.json()).then(setApiResponse)
   }, [])
-  
+
   return (
     <div className={styles.app}>
       <PageTitle/>

@@ -4,11 +4,12 @@
  */
 
 import * as express from 'express';
+import { apiResponse, API_URL } from '@basic-workspace/api-interface';
 
 const app = express();
 
-app.get('/api', (req, res) => {
-  res.send({ message: 'Welcome to api!' });
+app.get(API_URL, (req, res) => {
+  res.send({ message: 'Welcome to api!' } as apiResponse);
 });
 
 const port = process.env.port || 3333;

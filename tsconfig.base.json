@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@basic-workspace/ui-header": ["libs/ui-header/src/index.ts"]
+      "@basic-workspace/ui-header": ["libs/ui-header/src/index.ts"],
+      "@basic-workspace/api-interface": ["libs/api-interface/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
