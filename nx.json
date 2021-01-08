@@ -22,5 +22,13 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "first-project": {
+      "tags": []
+    },
+    "first-project-e2e": {
+      "tags": [],
+      "implicitDependencies": ["first-project"]
+    }
+  }
 }
